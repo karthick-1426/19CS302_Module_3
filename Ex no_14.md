@@ -1,47 +1,34 @@
-# EX 13 To write a C program to read the elements and print only the odd elements in the 2D array.
-## DATE: 
+# EX 14 C program to delete first element in an array.
+## DATE:
 ## AIM:
-To write a C program to read the elements and print only the odd elements in the 2D array.
+To write a C program to delete first element in an array.
 
 ## Algorithm:
 1. Start.
-2. Define a variables i,j,n,a.
-3. Write program to find n x n matrix.
-4. Read the value using scanf.
-5. Ask the user to make an input
-6. Print out the answer.
-7. End.
+2. Define a variables i,j,a.
+3. Read the value using scanf.
+4. Ask the user to make an input
+5. Print out the answer
+6. End. 
 
 ## Program:
 ```c program
 #include<stdio.h> 
 int main()
 {
-int i,j,n,a[10][10];
+int i,n,a[10];
 scanf("%d",&n); 
 for(i=0;i<n;i++)
 {
-for(j=0;j<n;j++)
-{
-scanf("%d",&a[i][j]);
+scanf("%d",&a[i]);
 }
-}for(i=0;i<n;i++)
-{
-for(j=0;j<=n;j++)
-{
-if(a[i][j]%2==1)
-{
-printf("a[%d][%d] is %d \n",i,j,a[i][j]);
-}
-}
-printf("\n");
-}
-return 0;
+for(i=1;i<n;i++) 
+printf("%d ",a[i]);
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/56b4ee82-f330-43a6-b32f-55daacc70ab5)
+![image](https://github.com/user-attachments/assets/f6af2d03-16bb-4ede-bfe2-2c89d3e2b538)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
